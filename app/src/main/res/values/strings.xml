@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">MathRacer</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login">Login</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="no_students">No students to display.</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="no_races">No races to display.</string>
+    <string name="login_as_student">Login As Student</string>
+    <string name="drive_freely">Drive freely.</string>
+    <string name="race_complete">Race Complete</string>
+    <string name="again_question">Again?</string>
+    <string name="race">Use the MathRacer!</string>
+    <string name="permission_failure">Failed to get permission.</string>
+</resources>

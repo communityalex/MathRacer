@@ -1,0 +1,81 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_margin="20dp"
+    android:layout_height="match_parent"
+    tools:context="com.community.zenith.mathracer.raceactivity.StatsFragment">
+
+    <RelativeLayout
+        android:id="@+id/stats_view"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:textSize="18sp"
+            android:id="@+id/stats_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_below="@id/stats_name"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"
+            android:textSize="14sp"
+            android:id="@+id/stats_identifier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ProgressBar
+            android:layout_below="@id/stats_identifier"
+            android:id="@+id/stats_progress"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp" />
+
+        <LinearLayout
+            android:visibility="gone"
+            android:orientation="vertical"
+            android:layout_centerInParent="true"
+            android:id="@+id/stats_empty_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@drawable/ic_traffic_24dp_grey"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="48dp"
+                android:layout_height="48dp" />
+            <TextView
+                android:textColor="@color/grey"
+                android:text="@string/no_races"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/stats_identifier"
+            android:visibility="gone"
+            android:id="@+id/stats_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <com.jjoe64.graphview.GraphView
+                android:layout_margin="10dp"
+                android:id="@+id/stats_graph"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp" />
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/stats_graph"
+                android:id="@+id/races_recycler_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>
